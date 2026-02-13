@@ -1,0 +1,23 @@
+# =====================
+# PYTHON
+# =====================
+backend/venv/
+backend/__pycache__/
+backend/*.sqlite3
+backend/db.sqlite3
+backend/.env
+backend/.env.*
+
+# =====================
+# NODE
+# =====================
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+
+# =====================
+# OS / EDITOR
+# =====================
+.DS_Store
+.vscode/
