@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import SelectAccount from "./pages/SelectAccount";
 import Customers from "./pages/Customers";
 import RequireAuth from "./auth/RequireAuth";
+import RequireAccount from "./auth/RequireAccount";
 
 export default function App() {
   return (
@@ -23,7 +24,9 @@ export default function App() {
           path="/customers"
           element={
             <RequireAuth>
-              <Customers />
+              <RequireAccount>
+                <Customers />
+              </RequireAccount>
             </RequireAuth>
           }
         />
